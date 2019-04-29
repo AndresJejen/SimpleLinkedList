@@ -35,6 +35,17 @@ public class SLinkedList {
             this.tail = this.head;
     }
     
+    public void PopFront(){
+
+        if(this.head == null)
+            System.out.println("Lista vacia!!!");
+        
+        this.head = this.head.getNext();
+        
+        if(this.head == null)
+            this.tail = null;
+    }
+    
     public void ImprimirLista(){
         if(this.head == null){
             System.out.println("Lista vacia!!!");
