@@ -30,8 +30,27 @@ public class SLinkedList {
         Node tmp = new Node(o, null);
         tmp.setNext(head);
         head = tmp;
-       
+        
+        if (this.tail == null)
+            this.tail = this.head;
     }
+    
+    public void ImprimirLista(){
+        if(this.head == null){
+            System.out.println("Lista vacia!!!");
+        }
+        else{
+            Node p = this.head;
+            while(p!= null){
+                System.out.println(p.getInfo());
+                p = p.getNext();
+            }
+        }
+    }
+    
+    
+    
+    
     
     
     
