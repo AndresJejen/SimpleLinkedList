@@ -21,6 +21,7 @@ public class SimpleLinkedList {
         lista.PushFront(2);
         lista.PushFront(2.16);
         lista.ImprimirLista();
-    }
-    
+    }   
+
+
 }
